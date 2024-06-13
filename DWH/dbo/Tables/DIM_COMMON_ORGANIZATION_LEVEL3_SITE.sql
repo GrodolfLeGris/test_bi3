@@ -3,7 +3,7 @@
     [SITE_CODE]          NVARCHAR (20) NOT NULL,
     [SITE]               NVARCHAR (50) NOT NULL,
     [SITE_SHORT_NAME]    NVARCHAR (10) NULL,
-    [BUSINESS_UNIT]      NVARCHAR (50) NULL,
+    [ORGANIZATIONLVL2ID]      INT NULL,
     [COUNTRY]            NVARCHAR (50) NULL,
     [STATE]              NVARCHAR (50) NULL,
     [PLEXUS_CUSTOMER_NO] INT           NULL,

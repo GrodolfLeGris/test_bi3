@@ -66,11 +66,11 @@
   <ItemGroup>
     <Build Include="dbo\Tables\DIM_ACCOUNTING_ACCOUNT.sql" />
     <Build Include="dbo\Tables\DIM_ACCOUNTING_CLASSIFICATION.sql" />
-    <Build Include="dbo\Tables\DIM_COMMON_ACTIVITY.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_ORGANIZATION_LEVEL1_ACTIVITY.sql" />
     <Build Include="dbo\Tables\DIM_COMMON_BUILDING.sql" />
-    <Build Include="dbo\Tables\DIM_COMMON_BUSINESS_UNIT.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_ORGANIZATION_LEVEL2_BUSINESS_UNIT.sql" />
     <Build Include="dbo\Tables\DIM_COMMON_CUSTOMER.sql" />
-    <Build Include="dbo\Tables\DIM_COMMON_SITE.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_ORGANIZATION_LEVEL3_SITE.sql" />
     <Build Include="Security\PROD_DWH_USER.sql" />
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Logins\PROD_DWH_USER.sql" />

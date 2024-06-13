@@ -35,4 +35,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f195a9f6-0daf-437b-a5eb-0d0ba7b49619" ChangeDateTime="06/13/2024 20:24:34">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_SITE].[BUSINESS_UNIT]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_SITE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="be033338-c581-48ae-9e52-a93a7ae9c350" ChangeDateTime="06/13/2024 20:24:53">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_BUILDING].[ORGANIZATIONLVL3ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_BUILDING]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL1ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="22c1b56c-ca4d-4c9d-9e27-31ebde85b3e9" ChangeDateTime="06/13/2024 20:25:10">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_ACTIVITY].[ORGANIZATIONLVL2ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_ACTIVITY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL1ID" />
+  </Operation>
 </Operations>
