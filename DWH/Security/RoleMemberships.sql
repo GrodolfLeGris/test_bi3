@@ -1,0 +1,3 @@
+﻿ALTER ROLE [db_datareader] ADD MEMBER [PROD_DWH_USER];
+
+ALTER ROLE [db_datawriter] ADD MEMBER [PROD_DWH_USER];

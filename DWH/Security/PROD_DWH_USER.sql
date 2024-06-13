@@ -1,0 +1,2 @@
+﻿CREATE USER [PROD_DWH_User];
+
