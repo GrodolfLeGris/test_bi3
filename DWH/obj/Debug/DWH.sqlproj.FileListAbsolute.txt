@@ -1,0 +1,6 @@
+D:\0 - Apps\Databases\DWH\DWH\bin\Debug\DWH.dacpac
+D:\0 - Apps\Databases\DWH\DWH\obj\Debug\DWH.sqlproj.AssemblyReference.cache
+D:\0 - Apps\Databases\DWH\DWH\obj\Debug\DWH.dll
+D:\0 - Apps\Databases\DWH\DWH\obj\Debug\DWH.pdb
+D:\0 - Apps\Databases\DWH\DWH\bin\Debug\DWH.dll
+D:\0 - Apps\Databases\DWH\DWH\bin\Debug\DWH.pdb
