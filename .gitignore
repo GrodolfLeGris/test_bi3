@@ -4,11 +4,11 @@
 
 
 #IGNORE PROJECT DEBUG
-/MES/bin/Debug/*
-/MES/MES/bin/Debug/*
-/MES/MES/bin/*
-/MES/obj/Debug/*
-/MES/bin/Debug/*
+/DWH/bin/Debug/*
+/DWH/DWH/bin/Debug/*
+/DWH/DWH/bin/*
+/DWH/obj/Debug/*
+/DWH/bin/Debug/*
 
 # ReSharper is a .NET coding add-in
 _ReSharper*/

@@ -56,4 +56,207 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL1ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="cad3bcac-c5d4-4e8a-8ae4-d64a87931a7e" ChangeDateTime="06/24/2024 20:44:09">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_BUILDING].[ORGANIZATIONLVL1ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_BUILDING]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="de978e38-eb47-4e8d-b831-6156b969b88d" ChangeDateTime="06/24/2024 20:44:45">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ea2ac77-ee42-4513-96d6-726f07a2c038" ChangeDateTime="06/24/2024 20:45:49">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[PART_NO]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_NO" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a138c39b-3d4d-4751-8bbb-76e9bc68d0a6" ChangeDateTime="06/24/2024 20:45:52">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[PART_KEY]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_KEY" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b9edda10-73ed-4271-99d0-0c36b21cd90d" ChangeDateTime="06/24/2024 20:45:57">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[PART_NO_UNIQUE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_NO_UNIQUE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0718e4c8-01d5-407b-b24b-6eba49ac0fcd" ChangeDateTime="06/24/2024 20:46:07">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[PART_GROUP_KEY]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_TYPE_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d2df59ca-9121-4f1d-bd17-8423ecac4eac" ChangeDateTime="06/24/2024 20:46:17">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[PART_SOURCE_KEY]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_FAMILI_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="54e1c706-f88f-4247-bba3-424ecbe1d02c" ChangeDateTime="06/24/2024 20:47:11">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[MATERIAL_FAMILI_ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_FAMILY_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="27ca8447-e989-43d6-ac25-f5e7ecfa8c5e" ChangeDateTime="06/24/2024 20:47:19">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL].[MATERIAL_KEY]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bd2c0e94-6f92-4000-8c70-4cb6cd3f4bc0" ChangeDateTime="06/24/2024 22:42:05">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MATERIAL_TYPE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MATERIAL_TYPE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_TYPE_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c423e417-f7dd-4308-97b6-1345dfda3294" ChangeDateTime="06/24/2024 22:49:51">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_FAMILY].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_FAMILY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_FAMILY_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d9428f6d-aba3-46b5-be66-b74d42338c31" ChangeDateTime="06/24/2024 22:50:06">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_FAMILY].[MATERIAL_FAMILY_ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_FAMILY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ea4bd1c1-445e-4ec1-9c14-d4b8c80b59c3" ChangeDateTime="06/24/2024 22:50:21">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_FAMILY].[MATERIAL_FAMILY_OD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_FAMILY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_FAMILY_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cd9a1ee1-34ad-4205-8856-1d694c9e0499" ChangeDateTime="06/25/2024 13:27:53">
+    <Property Name="ElementName" Value="[dbo].[FACT_MATERIAL_INVENTORY_HISTORY].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_MATERIAL_INVENTORY_HISTORY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fe11a7db-7046-4cd3-8778-6802f5594c35" ChangeDateTime="06/25/2024 13:34:53">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_BUILDING].[BUILDING_KEY]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_BUILDING]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BUILDING_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d52c683d-f0fa-422d-a2d4-5c4929741d69" ChangeDateTime="06/25/2024 13:36:12">
+    <Property Name="ElementName" Value="[dbo].[FACT_MATERIAL_INVENTORY_HISTORY].[IS_CONSIGMENT]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_MATERIAL_INVENTORY_HISTORY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CONSIGMENT" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e2b63d4-1ed0-434d-8be9-89d781f8eaed" ChangeDateTime="06/25/2024 13:37:58">
+    <Property Name="ElementName" Value="[dbo].[FACT_MATERIAL_INVENTORY_HISTORY].[Quantity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_MATERIAL_INVENTORY_HISTORY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QUANTITY" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb9e96ab-5e56-45b9-86e6-e20ee664d825" ChangeDateTime="06/25/2024 13:40:26">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="00deba71-8935-42fa-a159-c16f22e6d674" ChangeDateTime="06/25/2024 13:44:24">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES].[MATERIAL_ORGANIZATIONLVL3IDID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3IDID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="db8867a1-7476-4f36-abb0-20b20aa5771e" ChangeDateTime="06/25/2024 15:17:34">
+    <Property Name="ElementName" Value="[dbo].[FACT_HUMAN_RESOURCES_ACCIDENTS].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_HUMAN_RESOURCES_ACCIDENTS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="55170d77-d91b-4b76-9cb6-410943cfe066" ChangeDateTime="06/25/2024 17:27:28">
+    <Property Name="ElementName" Value="[dbo].[FACT_MATERIAL_SCRAP].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_MATERIAL_SCRAP]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="635d9acc-06e6-4024-98a1-d87cf7fad173" ChangeDateTime="06/25/2024 17:30:09">
+    <Property Name="ElementName" Value="[dbo].[FACT_MATERIAL_SCRAP].[EXTE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_MATERIAL_SCRAP]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EXT_COST" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e8bb7a2d-019f-4650-a99b-2e82bd885207" ChangeDateTime="06/25/2024 19:32:08">
+    <Property Name="ElementName" Value="[dbo].[FACT_FINANCE_GROSS_MARGIN].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_FINANCE_GROSS_MARGIN]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="eaaa47af-eba4-43cb-ac0e-05b356c40898" ChangeDateTime="06/25/2024 19:32:54">
+    <Property Name="ElementName" Value="[dbo].[FACT_FINANCE_GROSS_MARGIN].[INVOICE_O]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FACT_FINANCE_GROSS_MARGIN]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INVOICE_NO" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1586aba-69ad-4600-b799-84da7b81c0c5" ChangeDateTime="07/01/2024 17:17:28">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_COUNTRY].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_COUNTRY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="COUNTRY_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74aea787-51ba-4444-b689-09f5091c1f28" ChangeDateTime="07/01/2024 17:19:58">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_CURRENCY].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_CURRENCY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CURRENCY_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e55e276-70bd-4fab-a097-38fd25085d1a" ChangeDateTime="07/01/2024 17:22:01">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_COUNTRY_STATE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_COUNTRY_STATE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="STATE_CODE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="525ae654-90f2-433d-8e61-c41cc992858e" ChangeDateTime="07/01/2024 22:08:24">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_CUSTOMER].[CUSTOMER_NO]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_CUSTOMER]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CUSTOMER_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f167641c-62ac-4426-b299-14e34901a9f0" ChangeDateTime="07/02/2024 20:46:42">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_OPERATION].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_OPERATION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OPERATION_ID" />
+  </Operation>
 </Operations>
