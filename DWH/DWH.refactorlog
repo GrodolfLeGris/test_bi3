@@ -259,4 +259,158 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="OPERATION_ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="0569cbf0-c1b0-4932-9760-12f9318ee974" ChangeDateTime="07/02/2024 20:58:21">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES].[CUSTOMER_NO]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CUSTOMER_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ce5f8cce-24d7-4992-81eb-38a884dcae45" ChangeDateTime="07/04/2024 17:18:13">
+    <Property Name="ElementName" Value="[dbo].[ODS_SALES_RELEASE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_SALES_RELEASE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8ec2cf1c-2d6d-464c-a042-b859ed348c07" ChangeDateTime="07/04/2024 17:20:43">
+    <Property Name="ElementName" Value="[dbo].[ODS_SALES_RELEASE].[Due_Date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_SALES_RELEASE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DUE_DATE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e94a5099-bad8-4df6-9f60-99e7c1d80e56" ChangeDateTime="07/04/2024 18:02:04">
+    <Property Name="ElementName" Value="[dbo].[ODS_HUMAN_RESOURCES_ACCIDENTS].[ACCIDENT_NO]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_HUMAN_RESOURCES_ACCIDENTS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INJURY_NO" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f82c8e83-5dce-4e45-b977-918066e9402a" ChangeDateTime="07/04/2024 19:01:16">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_LOCATION].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_LOCATION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LOCATION_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="645fd3b0-ba33-4533-99c6-0cc2f42054c1" ChangeDateTime="07/04/2024 19:01:34">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_LOCATION].[LOCATION]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_LOCATION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LOCATION_UNIQUE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d9ffc892-3ab8-481b-8eb9-a551c9d29ccd" ChangeDateTime="07/04/2024 20:06:56">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="56f0db81-91ab-474c-a2c5-ee35d9cbc484" ChangeDateTime="07/04/2024 20:08:41">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION].[RECORD_DATE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TRANSACTION_DATE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8af3d96d-cb06-4bb1-80af-6f1c466b0214" ChangeDateTime="07/04/2024 20:08:43">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SCRAP].[TRNDATE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SCRAP]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TRANSACTION_DATE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="25ce951f-3c8b-4723-8de7-812a5759e91e" ChangeDateTime="07/04/2024 21:12:04">
+    <Property Name="ElementName" Value="[dbo].[ODS_SALES_RETURN].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_SALES_RETURN]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d775830b-defa-4eb6-be26-3a598f6bd522" ChangeDateTime="07/04/2024 21:16:36">
+    <Property Name="ElementName" Value="[dbo].[ODS_SALES_RETURN].[CREDIR_QUANTITY]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_SALES_RETURN]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CREDIT_QUANTITY" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e009570-31a0-4448-8db3-32b07a473441" ChangeDateTime="07/05/2024 19:52:42">
+    <Property Name="ElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4e3d6b64-0629-4ad2-a762-294374d13cd9" ChangeDateTime="07/05/2024 19:56:34">
+    <Property Name="ElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE].[Paid]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PAID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7e2dc44a-f34c-42a3-add4-73515da21423" ChangeDateTime="07/05/2024 19:56:37">
+    <Property Name="ElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE].[Void]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VOID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e422b5d-2511-447d-a696-d3b102f8cf74" ChangeDateTime="07/05/2024 20:03:02">
+    <Property Name="ElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE].[DEIT]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_ACCOUNTING_AR_INVOICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DEBIT" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b56bdb11-a07a-4b62-b5f9-48f279afd40b" ChangeDateTime="07/05/2024 20:42:21">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_ADJUSMENT].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_ADJUSMENT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ed71a742-abc1-4b7d-b5b4-35bfac2ffe3b" ChangeDateTime="07/05/2024 20:42:34">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_ADJUSMENT].[MATERIA?ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_ADJUSMENT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f040064-388a-48ca-adb7-d74999bef3e0" ChangeDateTime="07/05/2024 20:44:35">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_ADJUSMENT].[ADJUSTMENT_CODE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_ADJUSMENT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ADJUSTMENT_REASON" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a6129ac9-a976-4ff6-8c7f-bf330404fd88" ChangeDateTime="07/05/2024 20:46:06">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION].[WORKCENTER_ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LOCATION_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="43791a48-984c-4780-bf3a-28fe397805b8" ChangeDateTime="07/05/2024 20:48:49">
+    <Property Name="ElementName" Value="[dbo].[ODS_PURCHASE_RELEASE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PURCHASE_RELEASE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="71cdab10-b12e-4065-917a-28803a984f83" ChangeDateTime="07/05/2024 20:51:19">
+    <Property Name="ElementName" Value="[dbo].[ODS_PURCHASE_RELEASE].[SNAPSHOT_DATE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PURCHASE_RELEASE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="REPORT_DATE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="985aeee7-54ed-4a99-8baf-d6e54625cba2" ChangeDateTime="07/05/2024 20:51:33">
+    <Property Name="ElementName" Value="[dbo].[ODS_PURCHASE_RELEASE].[REPORT_DATE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PURCHASE_RELEASE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SNAPSHOT_DATE" />
+  </Operation>
 </Operations>

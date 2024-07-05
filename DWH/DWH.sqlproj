@@ -83,6 +83,15 @@
     <Build Include="dbo\Tables\DIM_COMMON_COUNTRY_STATE.sql" />
     <Build Include="dbo\Tables\ODS_MATERIAL_INVENTORY.sql" />
     <Build Include="dbo\Tables\DIM_MATERIAL_OPERATION.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_RELEASE.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_FORECAST.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_LOCATION.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_PRODUCTION.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_RETURN.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_SUPPLIER.sql" />
+    <Build Include="dbo\Tables\ODS_ACCOUNTING_AR_INVOICE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_ADJUSMENT.sql" />
+    <Build Include="dbo\Tables\ODS_PURCHASE_RELEASE.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />
