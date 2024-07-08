@@ -1,0 +1,14 @@
+**/.JETEmitters/
+**/.Java/
+**/.metadata/
+**/temp/
+**/sqlPatterns/
+**/jobInfo.properties
+**/*.screenshot
+**/*.class
+**/jobs/process/**/target/
+**/code/routines/target/
+**/poms/**/*.item
+**/poms/**/*.project
+**/*.log
+**/poms/**/ext-resources/xmlMappings/*.*

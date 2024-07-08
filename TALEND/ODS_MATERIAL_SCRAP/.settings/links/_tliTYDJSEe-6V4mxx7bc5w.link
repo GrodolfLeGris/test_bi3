@@ -1,0 +1,29 @@
+{
+  "itemId" : "_tliTYDJSEe-6V4mxx7bc5w",
+  "contextList" : [ {
+    "contextName" : "DEVELOPMENT",
+    "repoId" : "_DVKI4DJQEe-6V4mxx7bc5w",
+    "parameterList" : [ {
+      "id" : "_qXEpgSHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_Login"
+    }, {
+      "id" : "_qXEpgiHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_AdditionalParams"
+    }, {
+      "id" : "_qXEpgyHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_Server"
+    }, {
+      "id" : "_qXEphCHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_Database"
+    }, {
+      "id" : "_qXEphSHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_Password"
+    }, {
+      "id" : "_qXEphiHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_Port"
+    }, {
+      "id" : "_qXEphyHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_DWH_Schema"
+    } ]
+  } ]
+}
