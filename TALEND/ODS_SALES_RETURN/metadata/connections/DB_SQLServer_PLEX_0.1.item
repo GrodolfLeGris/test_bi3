@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_RtaeECHMEe-mELykhIdj6Q" name="DB_SQLServer_PLEX" id="_RsmlwCHMEe-mELykhIdj6Q" label="DB_SQLServer_PLEX" dataPackage="_8cbocDJNEe-6V4mxx7bc5w" ContextMode="true" ContextId="_qW31MCHOEe-mELykhIdj6Q" contextName="DEVELOPMENT" DatabaseType="Microsoft SQL Server" DriverJarPath="" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://10.122.40.10:1438/PLEX;" dbVersionString="JTDS" Port="context.DB_SQLServer_PLEX_Port" Username="context.DB_SQLServer_PLEX_Login" Password="context.DB_SQLServer_PLEX_Password" ServerName="context.DB_SQLServer_PLEX_Server" DatasourceName="" FileFieldName="" SID="context.DB_SQLServer_PLEX_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" DBRootPath="" AdditionalParams="context.DB_SQLServer_PLEX_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.DB_SQLServer_PLEX_Schema">
+    <taggedValue xmi:id="_YaXf8XfaEe2eNYCHhjMuRA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_Ya4dUHfaEe2eNYCHhjMuRA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_Ya8uwHfaEe2eNYCHhjMuRA" tag="Status" value=""/>
+    <taggedValue xmi:id="_Ya8uwXfaEe2eNYCHhjMuRA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Ya8uwnfaEe2eNYCHhjMuRA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Ya8uw3faEe2eNYCHhjMuRA" tag="Description" value=""/>
+    <taggedValue xmi:id="_Ya8uxHfaEe2eNYCHhjMuRA" tag="Author" value=""/>
+    <taggedValue xmi:id="_Ya8uxXfaEe2eNYCHhjMuRA" tag="otherParameter"/>
+    <taggedValue xmi:id="_Ygmq0HfaEe2eNYCHhjMuRA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_Ygmq0XfaEe2eNYCHhjMuRA" tag="DB ProductVersion" value="16.00.1115"/>
+    <taggedValue xmi:id="_Ygmq0nfaEe2eNYCHhjMuRA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_YaXf8nfaEe2eNYCHhjMuRA" key="CONN_PARA_KEY_USERNAME" value="context.DB_SQLServer_PLEX_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_8cbocDJNEe-6V4mxx7bc5w" name="PLEX" dataManager="_RtaeECHMEe-mELykhIdj6Q">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbocTJNEe-6V4mxx7bc5w" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbocjJNEe-6V4mxx7bc5w" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cboczJNEe-6V4mxx7bc5w" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbodDJNEe-6V4mxx7bc5w" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbodTJNEe-6V4mxx7bc5w" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbodjJNEe-6V4mxx7bc5w" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbodzJNEe-6V4mxx7bc5w" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cboeDJNEe-6V4mxx7bc5w" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cboeTJNEe-6V4mxx7bc5w" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cboejJNEe-6V4mxx7bc5w" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cboezJNEe-6V4mxx7bc5w" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbofDJNEe-6V4mxx7bc5w" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8cbofTJNEe-6V4mxx7bc5w" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
