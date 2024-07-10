@@ -61,7 +61,7 @@ import java.util.Comparator;
 /**
  * Job: Main_Template Purpose: Template for PLEX extraction<br>
  * Description: Template Using JUA1 Plex Server <br>
- * @author user@talend.com
+ * @author 
  * @version 8.0.1.20211109_1610
  * @status 
  */
@@ -5670,6 +5670,12 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 					return this.SERIAL_NO;
 				}
 				
+			    public Float SALE_UNIT_PRICE;
+
+				public Float getSALE_UNIT_PRICE () {
+					return this.SALE_UNIT_PRICE;
+				}
+				
 
 
 	@Override
@@ -5679,8 +5685,6 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 			int result = DEFAULT_HASHCODE;
 	
 						result = prime * result + ((this.ORGANIZATIONLVL3ID == null) ? 0 : this.ORGANIZATIONLVL3ID.hashCode());
-					
-						result = prime * result + ((this.REPORT_DATE == null) ? 0 : this.REPORT_DATE.hashCode());
 					
 						result = prime * result + ((this.OPERATION_ID == null) ? 0 : this.OPERATION_ID.hashCode());
 					
@@ -5704,14 +5708,6 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 								return false;
 						
 						} else if (!this.ORGANIZATIONLVL3ID.equals(other.ORGANIZATIONLVL3ID))
-						
-							return false;
-					
-						if (this.REPORT_DATE == null) {
-							if (other.REPORT_DATE != null)
-								return false;
-						
-						} else if (!this.REPORT_DATE.equals(other.REPORT_DATE))
 						
 							return false;
 					
@@ -5748,13 +5744,13 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 	            other.LOCATION_ID = this.LOCATION_ID;
 	            other.BUILDING_ID = this.BUILDING_ID;
 	            other.SERIAL_NO = this.SERIAL_NO;
+	            other.SALE_UNIT_PRICE = this.SALE_UNIT_PRICE;
 	            
 	}
 
 	public void copyKeysDataTo(row2Struct other) {
 
 		other.ORGANIZATIONLVL3ID = this.ORGANIZATIONLVL3ID;
-	            	other.REPORT_DATE = this.REPORT_DATE;
 	            	other.OPERATION_ID = this.OPERATION_ID;
 	            	other.SERIAL_NO = this.SERIAL_NO;
 	            	
@@ -5936,6 +5932,13 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 					
 					this.SERIAL_NO = readString(dis);
 					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
 
@@ -5979,6 +5982,13 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 			        this.BUILDING_ID = dis.readInt();
 					
 					this.SERIAL_NO = readString(dis);
+					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
 					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
@@ -6042,6 +6052,15 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 				
 						writeString(this.SERIAL_NO,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -6097,6 +6116,15 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 				
 						writeString(this.SERIAL_NO,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -6121,6 +6149,7 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 		sb.append(",LOCATION_ID="+String.valueOf(LOCATION_ID));
 		sb.append(",BUILDING_ID="+String.valueOf(BUILDING_ID));
 		sb.append(",SERIAL_NO="+SERIAL_NO);
+		sb.append(",SALE_UNIT_PRICE="+String.valueOf(SALE_UNIT_PRICE));
 	    sb.append("]");
 
 	    return sb.toString();
@@ -6134,12 +6163,6 @@ public static class row2Struct implements routines.system.IPersistableRow<row2St
 		int returnValue = -1;
 		
 						returnValue = checkNullsAndCompare(this.ORGANIZATIONLVL3ID, other.ORGANIZATIONLVL3ID);
-						if(returnValue != 0) {
-							return returnValue;
-						}
-
-					
-						returnValue = checkNullsAndCompare(this.REPORT_DATE, other.REPORT_DATE);
 						if(returnValue != 0) {
 							return returnValue;
 						}
@@ -6264,6 +6287,12 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 					return this.SERIAL_NO;
 				}
 				
+			    public Float SALE_UNIT_PRICE;
+
+				public Float getSALE_UNIT_PRICE () {
+					return this.SALE_UNIT_PRICE;
+				}
+				
 
 
 	@Override
@@ -6273,8 +6302,6 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 			int result = DEFAULT_HASHCODE;
 	
 						result = prime * result + ((this.ORGANIZATIONLVL3ID == null) ? 0 : this.ORGANIZATIONLVL3ID.hashCode());
-					
-						result = prime * result + ((this.REPORT_DATE == null) ? 0 : this.REPORT_DATE.hashCode());
 					
 						result = prime * result + ((this.OPERATION_ID == null) ? 0 : this.OPERATION_ID.hashCode());
 					
@@ -6298,14 +6325,6 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 								return false;
 						
 						} else if (!this.ORGANIZATIONLVL3ID.equals(other.ORGANIZATIONLVL3ID))
-						
-							return false;
-					
-						if (this.REPORT_DATE == null) {
-							if (other.REPORT_DATE != null)
-								return false;
-						
-						} else if (!this.REPORT_DATE.equals(other.REPORT_DATE))
 						
 							return false;
 					
@@ -6342,13 +6361,13 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 	            other.LOCATION_ID = this.LOCATION_ID;
 	            other.BUILDING_ID = this.BUILDING_ID;
 	            other.SERIAL_NO = this.SERIAL_NO;
+	            other.SALE_UNIT_PRICE = this.SALE_UNIT_PRICE;
 	            
 	}
 
 	public void copyKeysDataTo(InsertStruct other) {
 
 		other.ORGANIZATIONLVL3ID = this.ORGANIZATIONLVL3ID;
-	            	other.REPORT_DATE = this.REPORT_DATE;
 	            	other.OPERATION_ID = this.OPERATION_ID;
 	            	other.SERIAL_NO = this.SERIAL_NO;
 	            	
@@ -6530,6 +6549,13 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 					
 					this.SERIAL_NO = readString(dis);
 					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
 
@@ -6573,6 +6599,13 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 			        this.BUILDING_ID = dis.readInt();
 					
 					this.SERIAL_NO = readString(dis);
+					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
 					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
@@ -6636,6 +6669,15 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 				
 						writeString(this.SERIAL_NO,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -6691,6 +6733,15 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 				
 						writeString(this.SERIAL_NO,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -6715,6 +6766,7 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 		sb.append(",LOCATION_ID="+String.valueOf(LOCATION_ID));
 		sb.append(",BUILDING_ID="+String.valueOf(BUILDING_ID));
 		sb.append(",SERIAL_NO="+SERIAL_NO);
+		sb.append(",SALE_UNIT_PRICE="+String.valueOf(SALE_UNIT_PRICE));
 	    sb.append("]");
 
 	    return sb.toString();
@@ -6728,12 +6780,6 @@ public static class InsertStruct implements routines.system.IPersistableRow<Inse
 		int returnValue = -1;
 		
 						returnValue = checkNullsAndCompare(this.ORGANIZATIONLVL3ID, other.ORGANIZATIONLVL3ID);
-						if(returnValue != 0) {
-							return returnValue;
-						}
-
-					
-						returnValue = checkNullsAndCompare(this.REPORT_DATE, other.REPORT_DATE);
 						if(returnValue != 0) {
 							return returnValue;
 						}
@@ -6850,6 +6896,84 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 					return this.Serial_No;
 				}
 				
+			    public Float SALE_UNIT_PRICE;
+
+				public Float getSALE_UNIT_PRICE () {
+					return this.SALE_UNIT_PRICE;
+				}
+				
+			    public String BU;
+
+				public String getBU () {
+					return this.BU;
+				}
+				
+			    public String Source;
+
+				public String getSource () {
+					return this.Source;
+				}
+				
+			    public String OrgaLevel3;
+
+				public String getOrgaLevel3 () {
+					return this.OrgaLevel3;
+				}
+				
+			    public String MaterialNumber;
+
+				public String getMaterialNumber () {
+					return this.MaterialNumber;
+				}
+				
+			    public String WorkOrder;
+
+				public String getWorkOrder () {
+					return this.WorkOrder;
+				}
+				
+			    public String OperationNumber;
+
+				public String getOperationNumber () {
+					return this.OperationNumber;
+				}
+				
+			    public String LastOperation;
+
+				public String getLastOperation () {
+					return this.LastOperation;
+				}
+				
+			    public String Plant;
+
+				public String getPlant () {
+					return this.Plant;
+				}
+				
+			    public String ConfimationNumber;
+
+				public String getConfimationNumber () {
+					return this.ConfimationNumber;
+				}
+				
+			    public String ConfirmtionDate;
+
+				public String getConfirmtionDate () {
+					return this.ConfirmtionDate;
+				}
+				
+			    public String ConfirmtionTime;
+
+				public String getConfirmtionTime () {
+					return this.ConfirmtionTime;
+				}
+				
+			    public String ConfimationYieldQuantity;
+
+				public String getConfimationYieldQuantity () {
+					return this.ConfimationYieldQuantity;
+				}
+				
 
 
 	private Integer readInteger(ObjectInputStream dis) throws IOException{
@@ -6989,6 +7113,37 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 					
 					this.Serial_No = readString(dis);
 					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
+					
+					this.BU = readString(dis);
+					
+					this.Source = readString(dis);
+					
+					this.OrgaLevel3 = readString(dis);
+					
+					this.MaterialNumber = readString(dis);
+					
+					this.WorkOrder = readString(dis);
+					
+					this.OperationNumber = readString(dis);
+					
+					this.LastOperation = readString(dis);
+					
+					this.Plant = readString(dis);
+					
+					this.ConfimationNumber = readString(dis);
+					
+					this.ConfirmtionDate = readString(dis);
+					
+					this.ConfirmtionTime = readString(dis);
+					
+					this.ConfimationYieldQuantity = readString(dis);
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
 
@@ -7037,6 +7192,37 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 					this.BUILDING_CODE_UNIQUE = readString(dis);
 					
 					this.Serial_No = readString(dis);
+					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
+					
+					this.BU = readString(dis);
+					
+					this.Source = readString(dis);
+					
+					this.OrgaLevel3 = readString(dis);
+					
+					this.MaterialNumber = readString(dis);
+					
+					this.WorkOrder = readString(dis);
+					
+					this.OperationNumber = readString(dis);
+					
+					this.LastOperation = readString(dis);
+					
+					this.Plant = readString(dis);
+					
+					this.ConfimationNumber = readString(dis);
+					
+					this.ConfirmtionDate = readString(dis);
+					
+					this.ConfirmtionTime = readString(dis);
+					
+					this.ConfimationYieldQuantity = readString(dis);
 					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
@@ -7105,6 +7291,63 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 				
 						writeString(this.Serial_No,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
+					// String
+				
+						writeString(this.BU,dos);
+					
+					// String
+				
+						writeString(this.Source,dos);
+					
+					// String
+				
+						writeString(this.OrgaLevel3,dos);
+					
+					// String
+				
+						writeString(this.MaterialNumber,dos);
+					
+					// String
+				
+						writeString(this.WorkOrder,dos);
+					
+					// String
+				
+						writeString(this.OperationNumber,dos);
+					
+					// String
+				
+						writeString(this.LastOperation,dos);
+					
+					// String
+				
+						writeString(this.Plant,dos);
+					
+					// String
+				
+						writeString(this.ConfimationNumber,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionDate,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionTime,dos);
+					
+					// String
+				
+						writeString(this.ConfimationYieldQuantity,dos);
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -7165,6 +7408,63 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 				
 						writeString(this.Serial_No,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
+					// String
+				
+						writeString(this.BU,dos);
+					
+					// String
+				
+						writeString(this.Source,dos);
+					
+					// String
+				
+						writeString(this.OrgaLevel3,dos);
+					
+					// String
+				
+						writeString(this.MaterialNumber,dos);
+					
+					// String
+				
+						writeString(this.WorkOrder,dos);
+					
+					// String
+				
+						writeString(this.OperationNumber,dos);
+					
+					// String
+				
+						writeString(this.LastOperation,dos);
+					
+					// String
+				
+						writeString(this.Plant,dos);
+					
+					// String
+				
+						writeString(this.ConfimationNumber,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionDate,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionTime,dos);
+					
+					// String
+				
+						writeString(this.ConfimationYieldQuantity,dos);
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -7189,6 +7489,19 @@ public static class row1Struct implements routines.system.IPersistableRow<row1St
 		sb.append(",WORKCENTER_CODE_UNIQUE="+WORKCENTER_CODE_UNIQUE);
 		sb.append(",BUILDING_CODE_UNIQUE="+BUILDING_CODE_UNIQUE);
 		sb.append(",Serial_No="+Serial_No);
+		sb.append(",SALE_UNIT_PRICE="+String.valueOf(SALE_UNIT_PRICE));
+		sb.append(",BU="+BU);
+		sb.append(",Source="+Source);
+		sb.append(",OrgaLevel3="+OrgaLevel3);
+		sb.append(",MaterialNumber="+MaterialNumber);
+		sb.append(",WorkOrder="+WorkOrder);
+		sb.append(",OperationNumber="+OperationNumber);
+		sb.append(",LastOperation="+LastOperation);
+		sb.append(",Plant="+Plant);
+		sb.append(",ConfimationNumber="+ConfimationNumber);
+		sb.append(",ConfirmtionDate="+ConfirmtionDate);
+		sb.append(",ConfirmtionTime="+ConfirmtionTime);
+		sb.append(",ConfimationYieldQuantity="+ConfimationYieldQuantity);
 	    sb.append("]");
 
 	    return sb.toString();
@@ -7300,6 +7613,84 @@ public static class after_tDBInput_1Struct implements routines.system.IPersistab
 					return this.Serial_No;
 				}
 				
+			    public Float SALE_UNIT_PRICE;
+
+				public Float getSALE_UNIT_PRICE () {
+					return this.SALE_UNIT_PRICE;
+				}
+				
+			    public String BU;
+
+				public String getBU () {
+					return this.BU;
+				}
+				
+			    public String Source;
+
+				public String getSource () {
+					return this.Source;
+				}
+				
+			    public String OrgaLevel3;
+
+				public String getOrgaLevel3 () {
+					return this.OrgaLevel3;
+				}
+				
+			    public String MaterialNumber;
+
+				public String getMaterialNumber () {
+					return this.MaterialNumber;
+				}
+				
+			    public String WorkOrder;
+
+				public String getWorkOrder () {
+					return this.WorkOrder;
+				}
+				
+			    public String OperationNumber;
+
+				public String getOperationNumber () {
+					return this.OperationNumber;
+				}
+				
+			    public String LastOperation;
+
+				public String getLastOperation () {
+					return this.LastOperation;
+				}
+				
+			    public String Plant;
+
+				public String getPlant () {
+					return this.Plant;
+				}
+				
+			    public String ConfimationNumber;
+
+				public String getConfimationNumber () {
+					return this.ConfimationNumber;
+				}
+				
+			    public String ConfirmtionDate;
+
+				public String getConfirmtionDate () {
+					return this.ConfirmtionDate;
+				}
+				
+			    public String ConfirmtionTime;
+
+				public String getConfirmtionTime () {
+					return this.ConfirmtionTime;
+				}
+				
+			    public String ConfimationYieldQuantity;
+
+				public String getConfimationYieldQuantity () {
+					return this.ConfimationYieldQuantity;
+				}
+				
 
 
 	private Integer readInteger(ObjectInputStream dis) throws IOException{
@@ -7439,6 +7830,37 @@ public static class after_tDBInput_1Struct implements routines.system.IPersistab
 					
 					this.Serial_No = readString(dis);
 					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
+					
+					this.BU = readString(dis);
+					
+					this.Source = readString(dis);
+					
+					this.OrgaLevel3 = readString(dis);
+					
+					this.MaterialNumber = readString(dis);
+					
+					this.WorkOrder = readString(dis);
+					
+					this.OperationNumber = readString(dis);
+					
+					this.LastOperation = readString(dis);
+					
+					this.Plant = readString(dis);
+					
+					this.ConfimationNumber = readString(dis);
+					
+					this.ConfirmtionDate = readString(dis);
+					
+					this.ConfirmtionTime = readString(dis);
+					
+					this.ConfimationYieldQuantity = readString(dis);
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
 
@@ -7487,6 +7909,37 @@ public static class after_tDBInput_1Struct implements routines.system.IPersistab
 					this.BUILDING_CODE_UNIQUE = readString(dis);
 					
 					this.Serial_No = readString(dis);
+					
+			            length = dis.readByte();
+           				if (length == -1) {
+           	    			this.SALE_UNIT_PRICE = null;
+           				} else {
+           			    	this.SALE_UNIT_PRICE = dis.readFloat();
+           				}
+					
+					this.BU = readString(dis);
+					
+					this.Source = readString(dis);
+					
+					this.OrgaLevel3 = readString(dis);
+					
+					this.MaterialNumber = readString(dis);
+					
+					this.WorkOrder = readString(dis);
+					
+					this.OperationNumber = readString(dis);
+					
+					this.LastOperation = readString(dis);
+					
+					this.Plant = readString(dis);
+					
+					this.ConfimationNumber = readString(dis);
+					
+					this.ConfirmtionDate = readString(dis);
+					
+					this.ConfirmtionTime = readString(dis);
+					
+					this.ConfimationYieldQuantity = readString(dis);
 					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
@@ -7555,6 +8008,63 @@ public static class after_tDBInput_1Struct implements routines.system.IPersistab
 				
 						writeString(this.Serial_No,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
+					// String
+				
+						writeString(this.BU,dos);
+					
+					// String
+				
+						writeString(this.Source,dos);
+					
+					// String
+				
+						writeString(this.OrgaLevel3,dos);
+					
+					// String
+				
+						writeString(this.MaterialNumber,dos);
+					
+					// String
+				
+						writeString(this.WorkOrder,dos);
+					
+					// String
+				
+						writeString(this.OperationNumber,dos);
+					
+					// String
+				
+						writeString(this.LastOperation,dos);
+					
+					// String
+				
+						writeString(this.Plant,dos);
+					
+					// String
+				
+						writeString(this.ConfimationNumber,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionDate,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionTime,dos);
+					
+					// String
+				
+						writeString(this.ConfimationYieldQuantity,dos);
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -7615,6 +8125,63 @@ public static class after_tDBInput_1Struct implements routines.system.IPersistab
 				
 						writeString(this.Serial_No,dos);
 					
+					// Float
+				
+						if(this.SALE_UNIT_PRICE == null) {
+			                dos.writeByte(-1);
+						} else {
+               				dos.writeByte(0);
+           			    	dos.writeFloat(this.SALE_UNIT_PRICE);
+		            	}
+					
+					// String
+				
+						writeString(this.BU,dos);
+					
+					// String
+				
+						writeString(this.Source,dos);
+					
+					// String
+				
+						writeString(this.OrgaLevel3,dos);
+					
+					// String
+				
+						writeString(this.MaterialNumber,dos);
+					
+					// String
+				
+						writeString(this.WorkOrder,dos);
+					
+					// String
+				
+						writeString(this.OperationNumber,dos);
+					
+					// String
+				
+						writeString(this.LastOperation,dos);
+					
+					// String
+				
+						writeString(this.Plant,dos);
+					
+					// String
+				
+						writeString(this.ConfimationNumber,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionDate,dos);
+					
+					// String
+				
+						writeString(this.ConfirmtionTime,dos);
+					
+					// String
+				
+						writeString(this.ConfimationYieldQuantity,dos);
+					
         	} catch (IOException e) {
 	            throw new RuntimeException(e);
         }
@@ -7639,6 +8206,19 @@ public static class after_tDBInput_1Struct implements routines.system.IPersistab
 		sb.append(",WORKCENTER_CODE_UNIQUE="+WORKCENTER_CODE_UNIQUE);
 		sb.append(",BUILDING_CODE_UNIQUE="+BUILDING_CODE_UNIQUE);
 		sb.append(",Serial_No="+Serial_No);
+		sb.append(",SALE_UNIT_PRICE="+String.valueOf(SALE_UNIT_PRICE));
+		sb.append(",BU="+BU);
+		sb.append(",Source="+Source);
+		sb.append(",OrgaLevel3="+OrgaLevel3);
+		sb.append(",MaterialNumber="+MaterialNumber);
+		sb.append(",WorkOrder="+WorkOrder);
+		sb.append(",OperationNumber="+OperationNumber);
+		sb.append(",LastOperation="+LastOperation);
+		sb.append(",Plant="+Plant);
+		sb.append(",ConfimationNumber="+ConfimationNumber);
+		sb.append(",ConfirmtionDate="+ConfirmtionDate);
+		sb.append(",ConfirmtionTime="+ConfirmtionTime);
+		sb.append(",ConfimationYieldQuantity="+ConfimationYieldQuantity);
 	    sb.append("]");
 
 	    return sb.toString();
@@ -7796,10 +8376,10 @@ long date_tDBOutput_1;
 java.util.Calendar calendar_datetimeoffset_tDBOutput_1 = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("UTC"));
 
 
-        int updateKeyCount_tDBOutput_1 = 4;
+        int updateKeyCount_tDBOutput_1 = 3;
         if(updateKeyCount_tDBOutput_1 < 1) {
             throw new RuntimeException("For update, Schema must have a key");
-        } else if (updateKeyCount_tDBOutput_1 == 11 && true) {
+        } else if (updateKeyCount_tDBOutput_1 == 12 && true) {
                     System.err.println("For update, every Schema column can not be a key");
         }
 
@@ -7818,12 +8398,12 @@ if(dbschema_tDBOutput_1 == null || dbschema_tDBOutput_1.trim().length() == 0) {
 }
 	int count_tDBOutput_1=0;
 
-        java.sql.PreparedStatement pstmt_tDBOutput_1 = conn_tDBOutput_1.prepareStatement("SELECT COUNT(1) FROM [" + tableName_tDBOutput_1 + "] WHERE [ORGANIZATIONLVL3ID] = ? AND [REPORT_DATE] = ? AND [OPERATION_ID] = ? AND [SERIAL_NO] = ?");
+        java.sql.PreparedStatement pstmt_tDBOutput_1 = conn_tDBOutput_1.prepareStatement("SELECT COUNT(1) FROM [" + tableName_tDBOutput_1 + "] WHERE [ORGANIZATIONLVL3ID] = ? AND [OPERATION_ID] = ? AND [SERIAL_NO] = ?");
         resourceMap.put("pstmt_tDBOutput_1", pstmt_tDBOutput_1);
-        String insert_tDBOutput_1 = "INSERT INTO [" + tableName_tDBOutput_1 + "] ([ORGANIZATIONLVL3ID],[MATERIAL_ID],[QUANTITY],[TRANSACTION_DATE],[REPORT_DATE],[REJECTED],[OPERATION_ID],[INVENTORY_TYPE],[LOCATION_ID],[BUILDING_ID],[SERIAL_NO]) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+        String insert_tDBOutput_1 = "INSERT INTO [" + tableName_tDBOutput_1 + "] ([ORGANIZATIONLVL3ID],[MATERIAL_ID],[QUANTITY],[TRANSACTION_DATE],[REPORT_DATE],[REJECTED],[OPERATION_ID],[INVENTORY_TYPE],[LOCATION_ID],[BUILDING_ID],[SERIAL_NO],[SALE_UNIT_PRICE]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
         java.sql.PreparedStatement pstmtInsert_tDBOutput_1 = conn_tDBOutput_1.prepareStatement(insert_tDBOutput_1);
         resourceMap.put("pstmtInsert_tDBOutput_1", pstmtInsert_tDBOutput_1);
-        String update_tDBOutput_1 = "UPDATE [" + tableName_tDBOutput_1 + "] SET [MATERIAL_ID] = ?,[QUANTITY] = ?,[TRANSACTION_DATE] = ?,[REJECTED] = ?,[INVENTORY_TYPE] = ?,[LOCATION_ID] = ?,[BUILDING_ID] = ? WHERE [ORGANIZATIONLVL3ID] = ? AND [REPORT_DATE] = ? AND [OPERATION_ID] = ? AND [SERIAL_NO] = ?";
+        String update_tDBOutput_1 = "UPDATE [" + tableName_tDBOutput_1 + "] SET [MATERIAL_ID] = ?,[QUANTITY] = ?,[TRANSACTION_DATE] = ?,[REPORT_DATE] = ?,[REJECTED] = ?,[INVENTORY_TYPE] = ?,[LOCATION_ID] = ?,[BUILDING_ID] = ?,[SALE_UNIT_PRICE] = ? WHERE [ORGANIZATIONLVL3ID] = ? AND [OPERATION_ID] = ? AND [SERIAL_NO] = ?";
         java.sql.PreparedStatement pstmtUpdate_tDBOutput_1 = conn_tDBOutput_1.prepareStatement(update_tDBOutput_1);
         resourceMap.put("pstmtUpdate_tDBOutput_1", pstmtUpdate_tDBOutput_1);
  	boolean isShareIdentity_tDBOutput_1 = globalMap.get("shareIdentitySetting_tDBConnection_1") != null && (Boolean)globalMap.get("shareIdentitySetting_tDBConnection_1") == true;
@@ -8141,6 +8721,195 @@ InsertStruct Insert_tmp = new InsertStruct();
                 }
             } else {
                 row1.Serial_No = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 12) {
+								row1.SALE_UNIT_PRICE = null;
+							} else {
+		                          
+            row1.SALE_UNIT_PRICE = rs_tDBInput_1.getFloat(12);
+            if(rs_tDBInput_1.wasNull()){
+                    row1.SALE_UNIT_PRICE = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 13) {
+								row1.BU = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(13);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(13).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.BU = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.BU = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.BU = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 14) {
+								row1.Source = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(14);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(14).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.Source = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.Source = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.Source = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 15) {
+								row1.OrgaLevel3 = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(15);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.OrgaLevel3 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.OrgaLevel3 = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.OrgaLevel3 = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 16) {
+								row1.MaterialNumber = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(16);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(16).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.MaterialNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.MaterialNumber = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.MaterialNumber = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 17) {
+								row1.WorkOrder = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(17);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.WorkOrder = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.WorkOrder = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.WorkOrder = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 18) {
+								row1.OperationNumber = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(18);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(18).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.OperationNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.OperationNumber = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.OperationNumber = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 19) {
+								row1.LastOperation = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(19);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(19).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.LastOperation = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.LastOperation = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.LastOperation = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 20) {
+								row1.Plant = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(20);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.Plant = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.Plant = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.Plant = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 21) {
+								row1.ConfimationNumber = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(21);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(21).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.ConfimationNumber = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.ConfimationNumber = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.ConfimationNumber = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 22) {
+								row1.ConfirmtionDate = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(22);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(22).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.ConfirmtionDate = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.ConfirmtionDate = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.ConfirmtionDate = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 23) {
+								row1.ConfirmtionTime = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(23);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(23).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.ConfirmtionTime = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.ConfirmtionTime = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.ConfirmtionTime = null;
+            }
+		                    }
+							if(colQtyInRs_tDBInput_1 < 24) {
+								row1.ConfimationYieldQuantity = null;
+							} else {
+	                         		
+           		tmpContent_tDBInput_1 = rs_tDBInput_1.getString(24);
+            if(tmpContent_tDBInput_1 != null) {
+            	if (talendToDBList_tDBInput_1 .contains(rsmd_tDBInput_1.getColumnTypeName(24).toUpperCase(java.util.Locale.ENGLISH))) {
+            		row1.ConfimationYieldQuantity = FormatterUtils.formatUnwithE(tmpContent_tDBInput_1);
+            	} else {
+                	row1.ConfimationYieldQuantity = tmpContent_tDBInput_1;
+                }
+            } else {
+                row1.ConfimationYieldQuantity = null;
             }
 		                    }
 					
@@ -8625,13 +9394,14 @@ Insert_tmp.ORGANIZATIONLVL3ID = row1.ORGANIZATIONLVL3ID ;
 Insert_tmp.MATERIAL_ID = row3.MATERIAL_ID ;
 Insert_tmp.QUANTITY = row1.QUANTITY ;
 Insert_tmp.TRANSACTION_DATE = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss",row1.TRANSACTION_DATE) ;
-Insert_tmp.REPORT_DATE = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss",row1.REPORT_DATE) ;
+Insert_tmp.REPORT_DATE = TalendDate.parseDate("yyyy-MM-dd",row1.REPORT_DATE) ;
 Insert_tmp.REJECTED = Mathematical.MOD(row1.REJECTED,2)== 1 ;
 Insert_tmp.OPERATION_ID = row4.OPERATION_ID ;
 Insert_tmp.INVENTORY_TYPE = row1.INVENTORY_TYPE ;
 Insert_tmp.LOCATION_ID = row5.LOCATION_ID ;
 Insert_tmp.BUILDING_ID = row6.BUILDING_ID ;
 Insert_tmp.SERIAL_NO = row1.Serial_No ;
+Insert_tmp.SALE_UNIT_PRICE = row1.SALE_UNIT_PRICE ;
 Insert = Insert_tmp;
 // ###############################
 
@@ -8715,24 +9485,16 @@ pstmt_tDBOutput_1.setNull(1, java.sql.Types.INTEGER);
 
 
 
-                    if(Insert.REPORT_DATE != null) {
-pstmt_tDBOutput_1.setTimestamp(2, new java.sql.Timestamp(Insert.REPORT_DATE.getTime()));
-} else {
-pstmt_tDBOutput_1.setNull(2, java.sql.Types.TIMESTAMP);
-}
-
-
-
                     if(Insert.OPERATION_ID == null) {
-pstmt_tDBOutput_1.setNull(3, java.sql.Types.INTEGER);
-} else {pstmt_tDBOutput_1.setInt(3, Insert.OPERATION_ID);
+pstmt_tDBOutput_1.setNull(2, java.sql.Types.INTEGER);
+} else {pstmt_tDBOutput_1.setInt(2, Insert.OPERATION_ID);
 }
 
 
 
                     if(Insert.SERIAL_NO == null) {
-pstmt_tDBOutput_1.setNull(4, java.sql.Types.VARCHAR);
-} else {pstmt_tDBOutput_1.setString(4, Insert.SERIAL_NO);
+pstmt_tDBOutput_1.setNull(3, java.sql.Types.VARCHAR);
+} else {pstmt_tDBOutput_1.setString(3, Insert.SERIAL_NO);
 }
 
             int checkCount_tDBOutput_1 = -1;
@@ -8752,48 +9514,50 @@ pstmtUpdate_tDBOutput_1.setTimestamp(3, new java.sql.Timestamp(Insert.TRANSACTIO
 pstmtUpdate_tDBOutput_1.setNull(3, java.sql.Types.TIMESTAMP);
 }
 
-                        pstmtUpdate_tDBOutput_1.setBoolean(4, Insert.REJECTED);
-
-                        if(Insert.INVENTORY_TYPE == null) {
-pstmtUpdate_tDBOutput_1.setNull(5, java.sql.Types.VARCHAR);
-} else {pstmtUpdate_tDBOutput_1.setString(5, Insert.INVENTORY_TYPE);
+                        if(Insert.REPORT_DATE != null) {
+pstmtUpdate_tDBOutput_1.setTimestamp(4, new java.sql.Timestamp(Insert.REPORT_DATE.getTime()));
+} else {
+pstmtUpdate_tDBOutput_1.setNull(4, java.sql.Types.TIMESTAMP);
 }
 
-                        pstmtUpdate_tDBOutput_1.setInt(6, Insert.LOCATION_ID);
+                        pstmtUpdate_tDBOutput_1.setBoolean(5, Insert.REJECTED);
 
-                        pstmtUpdate_tDBOutput_1.setInt(7, Insert.BUILDING_ID);
+                        if(Insert.INVENTORY_TYPE == null) {
+pstmtUpdate_tDBOutput_1.setNull(6, java.sql.Types.VARCHAR);
+} else {pstmtUpdate_tDBOutput_1.setString(6, Insert.INVENTORY_TYPE);
+}
+
+                        pstmtUpdate_tDBOutput_1.setInt(7, Insert.LOCATION_ID);
+
+                        pstmtUpdate_tDBOutput_1.setInt(8, Insert.BUILDING_ID);
+
+                        if(Insert.SALE_UNIT_PRICE == null) {
+pstmtUpdate_tDBOutput_1.setNull(9, java.sql.Types.FLOAT);
+} else {pstmtUpdate_tDBOutput_1.setFloat(9, Insert.SALE_UNIT_PRICE);
+}
 
 
 	                    
 
                         if(Insert.ORGANIZATIONLVL3ID == null) {
-pstmtUpdate_tDBOutput_1.setNull(8 + count_tDBOutput_1, java.sql.Types.INTEGER);
-} else {pstmtUpdate_tDBOutput_1.setInt(8 + count_tDBOutput_1, Insert.ORGANIZATIONLVL3ID);
-}
-
-
-	                    
-
-                        if(Insert.REPORT_DATE != null) {
-pstmtUpdate_tDBOutput_1.setTimestamp(9 + count_tDBOutput_1, new java.sql.Timestamp(Insert.REPORT_DATE.getTime()));
-} else {
-pstmtUpdate_tDBOutput_1.setNull(9 + count_tDBOutput_1, java.sql.Types.TIMESTAMP);
+pstmtUpdate_tDBOutput_1.setNull(10 + count_tDBOutput_1, java.sql.Types.INTEGER);
+} else {pstmtUpdate_tDBOutput_1.setInt(10 + count_tDBOutput_1, Insert.ORGANIZATIONLVL3ID);
 }
 
 
 	                    
 
                         if(Insert.OPERATION_ID == null) {
-pstmtUpdate_tDBOutput_1.setNull(10 + count_tDBOutput_1, java.sql.Types.INTEGER);
-} else {pstmtUpdate_tDBOutput_1.setInt(10 + count_tDBOutput_1, Insert.OPERATION_ID);
+pstmtUpdate_tDBOutput_1.setNull(11 + count_tDBOutput_1, java.sql.Types.INTEGER);
+} else {pstmtUpdate_tDBOutput_1.setInt(11 + count_tDBOutput_1, Insert.OPERATION_ID);
 }
 
 
 	                    
 
                         if(Insert.SERIAL_NO == null) {
-pstmtUpdate_tDBOutput_1.setNull(11 + count_tDBOutput_1, java.sql.Types.VARCHAR);
-} else {pstmtUpdate_tDBOutput_1.setString(11 + count_tDBOutput_1, Insert.SERIAL_NO);
+pstmtUpdate_tDBOutput_1.setNull(12 + count_tDBOutput_1, java.sql.Types.VARCHAR);
+} else {pstmtUpdate_tDBOutput_1.setString(12 + count_tDBOutput_1, Insert.SERIAL_NO);
 }
 
             try {
@@ -8852,6 +9616,11 @@ pstmtInsert_tDBOutput_1.setNull(11, java.sql.Types.VARCHAR);
 } else {pstmtInsert_tDBOutput_1.setString(11, Insert.SERIAL_NO);
 }
 
+                        if(Insert.SALE_UNIT_PRICE == null) {
+pstmtInsert_tDBOutput_1.setNull(12, java.sql.Types.FLOAT);
+} else {pstmtInsert_tDBOutput_1.setFloat(12, Insert.SALE_UNIT_PRICE);
+}
+
             try {
                     int processedCount_tDBOutput_1 = pstmtInsert_tDBOutput_1.executeUpdate();
                     insertedCount_tDBOutput_1 += processedCount_tDBOutput_1;
@@ -8878,6 +9647,7 @@ globalMap.put("tDBOutput_1_ERROR_MESSAGE",e.getMessage());
                                 row2.LOCATION_ID = Insert.LOCATION_ID;
                                 row2.BUILDING_ID = Insert.BUILDING_ID;
                                 row2.SERIAL_NO = Insert.SERIAL_NO;
+                                row2.SALE_UNIT_PRICE = Insert.SALE_UNIT_PRICE;
             }
             	//////////batch execute by batch size///////
             	class LimitBytesHelper_tDBOutput_1{
@@ -13788,6 +14558,6 @@ if (execStat) {
     ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- *     323727 characters generated by Talend Open Studio for Data Integration 
- *     on the July 8, 2024 at 7:53:21 AM CST
+ *     345884 characters generated by Talend Open Studio for Data Integration 
+ *     on the July 10, 2024 at 4:38:47 PM CDT
  ************************************************************************************************/
