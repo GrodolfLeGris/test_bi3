@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_8hoYQKk1EeyaadfRxAJ8Ow" confirmationNeeded="false" name="DEPLOYMENT">
+  <contextParameter xmi:id="_8hoYQak1EeyaadfRxAJ8Ow" comment="" name="TALEND_CONF_Directory" prompt="TALEND_CONF_Directory?" promptNeeded="false" type="id_String" value="C:\data\talend\configuration\group\"/>
+  <contextParameter xmi:id="_8hoYQqk1EeyaadfRxAJ8Ow" comment="" name="TALEND_CONF_FileSeparator" prompt="TALEND_CONF_FileSeparator?" promptNeeded="false" type="id_String" value="=="/>
+  <contextParameter xmi:id="_8hoYQ6k1EeyaadfRxAJ8Ow" comment="" name="TALEND_CONF_FileName" prompt="TALEND_CONF_FileName?" promptNeeded="false" type="id_String" value="Settings.conf"/>
+</talendfile:ContextType>
