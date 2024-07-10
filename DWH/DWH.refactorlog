@@ -413,4 +413,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SNAPSHOT_DATE" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="3666e066-02d9-41dc-81a2-a6291c10f9fc" ChangeDateTime="07/10/2024 20:48:52">
+    <Property Name="ElementName" Value="[dbo].[ODS_SALES_RELEASE].[SALE_UNIT_PRICE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_SALES_RELEASE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UNIT_PRICE" />
+  </Operation>
 </Operations>
