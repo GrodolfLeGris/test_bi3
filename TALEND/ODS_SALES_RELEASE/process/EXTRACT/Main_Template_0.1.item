@@ -9,14 +9,14 @@
     <contextParameter comment="" name="DB_SQLServer_DWH_AdditionalParams" prompt="DB_SQLServer_DWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_String" value="" internalId="_1k3zYDJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_DWH_Database" prompt="DB_SQLServer_DWH_Database?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_String" value="PROD_DWH" internalId="_1k3zYTJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_DWH_Login" prompt="DB_SQLServer_DWH_Login?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_String" value="PROD_DWH_USER" internalId="_1k3zYjJQEe-6V4mxx7bc5w"/>
-    <contextParameter comment="" name="DB_SQLServer_DWH_Password" prompt="DB_SQLServer_DWH_Password?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_Password" value="enc:system.encryption.key.v1:bq351NMOgeOidAZohyGuZuwtR1FhYH/HbD+COAmBSZ4myJQX7ifrCirv5XUzYj+P" internalId="_1k3zYzJQEe-6V4mxx7bc5w"/>
+    <contextParameter comment="" name="DB_SQLServer_DWH_Password" prompt="DB_SQLServer_DWH_Password?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_Password" value="enc:system.encryption.key.v1:ZomP0edKeXd8JuUi301duTya/861x+VV+iybT3O/CzbvQ4iziwoorHQMCUeIzuF+" internalId="_1k3zYzJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_DWH_Port" prompt="DB_SQLServer_DWH_Port?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_String" value="1439" internalId="_1k3zZDJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_DWH_Schema" prompt="DB_SQLServer_DWH_Schema?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_String" value="" internalId="_1k3zZTJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_DWH_Server" prompt="DB_SQLServer_DWH_Server?" promptNeeded="false" repositoryContextId="_DVKI4DJQEe-6V4mxx7bc5w" type="id_String" value="10.122.40.10" internalId="_1k3zZjJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_PLEX_AdditionalParams" prompt="DB_SQLServer_PLEX_AdditionalParams?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_String" value="" internalId="_1k4acDJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_PLEX_Database" prompt="DB_SQLServer_PLEX_Database?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_String" value="PLEX" internalId="_1k4acTJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_PLEX_Login" prompt="DB_SQLServer_PLEX_Login?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_String" value="PROD_ODBC_USER" internalId="_1k4acjJQEe-6V4mxx7bc5w"/>
-    <contextParameter comment="" name="DB_SQLServer_PLEX_Password" prompt="DB_SQLServer_PLEX_Password?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_Password" value="enc:system.encryption.key.v1:OFtzfTbSq81S24JHrfLoXOLD35sHM8odHPYN2z54NlRIyJaphQ8e/gzPnRqgAUlq" internalId="_1k4aczJQEe-6V4mxx7bc5w"/>
+    <contextParameter comment="" name="DB_SQLServer_PLEX_Password" prompt="DB_SQLServer_PLEX_Password?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_Password" value="enc:system.encryption.key.v1:b6eO6XqMdTGGkqy2mOCjiQUBif0HWPbH3bHaCQYjph4GoONliLGSx6tfzFUYppWF" internalId="_1k4aczJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_PLEX_Port" prompt="DB_SQLServer_PLEX_Port?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_String" value="1438" internalId="_1k4adDJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_PLEX_Schema" prompt="DB_SQLServer_PLEX_Schema?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_String" value="" internalId="_1k4adTJQEe-6V4mxx7bc5w"/>
     <contextParameter comment="" name="DB_SQLServer_PLEX_Server" prompt="DB_SQLServer_PLEX_Server?" promptNeeded="false" repositoryContextId="_qW31MCHOEe-mELykhIdj6Q" type="id_String" value="10.122.40.10" internalId="_1k4adjJQEe-6V4mxx7bc5w"/>
@@ -71,7 +71,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:TyESgHSgEFbbJD8yf1SP7gaWeo2TCls7iueS0IH2" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:MqYf96LNg7XInKR10A4WmCVBFlU0zCwxoFW4khT9" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -106,7 +106,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Xn53JgylaJ9GxxA/Y/+IWbGkrSlEiQADXD6ufiME" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lfQt0UKT8rN3AYKtlTpT9b6WqsjM4q57HT2UgKZM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -300,7 +300,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_SQLServer_PLEX_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.DB_SQLServer_PLEX_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.DB_SQLServer_PLEX_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:H0xyMxRNnplmnQh6iJrCFSZOEyj8TZNQf8O8f90PTpPhvQVRzfsQsf39fBACDErdIVPJTjflXh7nMApTnjk="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XwfyytMCCdw4USuxFBiFCLAYwlqiotBaqwAo2jawY04KMfIlyg66QeZV4rR9miU7Kr21U1vnTq7aY8MnLwA="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_SQLServer_PLEX_AdditionalParams"/>
@@ -332,7 +332,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.DB_SQLServer_RPS_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zZUMBzctVjIVlZMbm+q6YtnR63adCbKYW+6fqInEO2UzD7ixtVz8" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Cu1/pTJBaNUwMfAp4DRQqi/C1+IeJqMphm/+OsgRdqzUTZK492ru" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;alart&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -440,6 +440,8 @@
       <column comment="" key="false" length="-1" name="FIRM" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PLANNING" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FORECAST_INCLUDE" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_PRICE" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_COST" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -461,6 +463,8 @@
         <mapperTableEntries name="FIRM" expression="Mathematical.MOD(row1.Firm,2)==1 " type="id_Boolean"/>
         <mapperTableEntries name="PLANNING" expression="Mathematical.MOD(row1.Planning ,2) == 1 " type="id_Boolean"/>
         <mapperTableEntries name="FORECAST_INCLUDE" expression="Mathematical.MOD(row1.Forecast_Include,2)==1 " type="id_Boolean"/>
+        <mapperTableEntries name="UNIT_PRICE" expression="row1.Price " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="UNIT_COST" expression="row1.Cost " type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ORGANIZATIONLVL3ID" type="id_Integer" nullable="true"/>
@@ -499,7 +503,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oaNWzsNsdBilyWncU9Xc5iUyI+l/SzCK59VLt/PG" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OQ9TbiIA+7QCMq83H5BwFVl2h0GMDLDJTBbSg+Wt" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ODS_SALES_RELEASE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -604,6 +608,16 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_PRICE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_COST"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -629,6 +643,8 @@
       <column comment="" key="false" length="-1" name="FIRM" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PLANNING" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FORECAST_INCLUDE" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_PRICE" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_COST" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="true" length="-1" name="ORGANIZATIONLVL3ID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -647,6 +663,8 @@
       <column comment="" key="false" length="-1" name="FIRM" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PLANNING" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FORECAST_INCLUDE" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_PRICE" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_COST" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -673,6 +691,8 @@
       <column comment="" key="false" length="-1" name="FIRM" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PLANNING" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FORECAST_INCLUDE" nullable="false" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_PRICE" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_COST" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="576">
@@ -686,7 +706,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.DB_SQLServer_RPS_Database" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lhR9EtnYu6gA0d331ZqV1KUs6y43THLRtHF3ylZHYtXdVYqChtIb" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Oj/E8nSxEX0qkAFnrv3ZubmnNVSc4B09CYEo6+m4BMBAAwq0V3KQ" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;alart&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -746,7 +766,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_SQLServer_DWH_Schema"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.DB_SQLServer_DWH_Database"/>
     <elementParameter field="TEXT" name="USER" value="context.DB_SQLServer_DWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KrTdWeB3Waow21KswDHF0TagrVFWwsBaZdt6XpWBA3+dMsJMJXQBQHIgQfHGABnuANJFoL/q6Ew5SrmwXg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o4whpKp6jKgrOxorthwNKIQxCJdghyWJMxcMJube/JDi4YN95+x67h6bibFdYijG8MkfM++zdmfOOIyH7g=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_SQLServer_DWH_AdditionalParams"/>
@@ -883,6 +903,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="PO"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNIT_COST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNIT_PRICE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Insert" show="false"/>
@@ -926,6 +952,12 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="PO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNIT_COST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNIT_PRICE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
