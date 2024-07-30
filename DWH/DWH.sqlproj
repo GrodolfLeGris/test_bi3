@@ -93,6 +93,7 @@
     <Build Include="dbo\Tables\ODS_MATERIAL_ADJUSMENT.sql" />
     <Build Include="dbo\Tables\ODS_PURCHASE_RELEASE.sql" />
     <Build Include="dbo\Tables\ODS_MATERIAL_BOM.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_INVENTORY_CURRENT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />

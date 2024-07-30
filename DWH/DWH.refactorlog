@@ -427,4 +427,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="7512d30d-1bd0-4e14-ae49-0f4e4ff18257" ChangeDateTime="07/30/2024 18:35:37">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_INVENTORY_CURRENT].[UPDATE_AGING_TIME]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_INVENTORY_CURRENT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UPDATE_TIME" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="24a3d82b-1e25-45b8-aaca-413dfe866aef" ChangeDateTime="07/30/2024 18:35:49">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_INVENTORY_CURRENT].[ADDED_AGING_TIME]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_INVENTORY_CURRENT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RECEIVING_TIME" />
+  </Operation>
 </Operations>
