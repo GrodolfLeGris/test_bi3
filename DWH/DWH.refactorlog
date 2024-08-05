@@ -462,4 +462,74 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PLANNING_GROUP_FOR_PURCHASING" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="dccf1460-e2e9-42cb-b13f-c54d018f5924" ChangeDateTime="08/05/2024 19:35:01">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AutoID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c62a3feb-287a-4e93-bbce-964c189917e6" ChangeDateTime="08/05/2024 19:42:14">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PartKeyID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ace2dd7-8a03-4ae6-b735-76517507ea9c" ChangeDateTime="08/05/2024 19:50:46">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY].[PCN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3f3fa005-303d-4d28-99ad-b3ce3c6d3d7e" ChangeDateTime="08/05/2024 19:50:51">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE].[PCN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b51cf6c-d2a1-43d4-8edf-9f6a40d46149" ChangeDateTime="08/05/2024 19:51:09">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY].[SupplierID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SUPPLIER_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="904e33d9-e24b-480e-b78f-a3e3da4702a5" ChangeDateTime="08/05/2024 19:51:12">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE].[SupplierID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SUPPLIER_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7f3ee0e4-f54d-45fc-bf73-0d1a7738e145" ChangeDateTime="08/05/2024 19:51:30">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE].[Part_No]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4e183db-a394-48ef-be23-c7d3a3d72f52" ChangeDateTime="08/05/2024 19:51:42">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY].[Part_No]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3b153fec-6af4-4b33-9c85-c3185785d50d" ChangeDateTime="08/05/2024 19:52:54">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY].[Date_Added]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TRNDATE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f302fb7d-aa34-490e-891f-030bb732782d" ChangeDateTime="08/05/2024 19:52:56">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE].[TrnDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_SUPPLIER_BOND_PIPELINE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TRNDATE" />
+  </Operation>
 </Operations>

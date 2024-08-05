@@ -4,3 +4,9 @@ D:\0 - Apps\Databases\DWH\DWH\obj\Debug\DWH.dll
 D:\0 - Apps\Databases\DWH\DWH\obj\Debug\DWH.pdb
 D:\0 - Apps\Databases\DWH\DWH\bin\Debug\DWH.dll
 D:\0 - Apps\Databases\DWH\DWH\bin\Debug\DWH.pdb
+D:\DataBases\DWH\DWH\bin\Debug\DWH.dacpac
+D:\DataBases\DWH\DWH\bin\Debug\DWH.dll
+D:\DataBases\DWH\DWH\bin\Debug\DWH.pdb
+D:\DataBases\DWH\DWH\obj\Debug\DWH.sqlproj.AssemblyReference.cache
+D:\DataBases\DWH\DWH\obj\Debug\DWH.dll
+D:\DataBases\DWH\DWH\obj\Debug\DWH.pdb
