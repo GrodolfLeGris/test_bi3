@@ -94,6 +94,8 @@
     <Build Include="dbo\Tables\ODS_PURCHASE_RELEASE.sql" />
     <Build Include="dbo\Tables\ODS_MATERIAL_BOM.sql" />
     <Build Include="dbo\Tables\ODS_MATERIAL_INVENTORY_CURRENT.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_MANUFACTURER.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_MANUFACTURER_PART_NO.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />

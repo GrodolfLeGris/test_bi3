@@ -441,4 +441,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="RECEIVING_TIME" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="80eb9997-763b-445e-ad19-822afb6fd4e0" ChangeDateTime="07/31/2024 15:50:19">
+    <Property Name="ElementName" Value="[dbo].[DIM_COMMON_MANUFACTURER].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_COMMON_MANUFACTURER]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MANUFACTURER_NO" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4d86d22b-0327-4acf-80e3-01bcc533fead" ChangeDateTime="07/31/2024 15:58:53">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_MANUFACTURER_PART_NO].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_MANUFACTURER_PART_NO]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e0426e49-8cfc-4f1f-bb1e-06e3926c8e73" ChangeDateTime="08/02/2024 21:00:04">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES].[PLANNING_GROUP]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PLANNING_GROUP_FOR_PURCHASING" />
+  </Operation>
 </Operations>
