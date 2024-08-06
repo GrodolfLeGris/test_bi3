@@ -1,0 +1,29 @@
+{
+  "itemId" : "_RsmlwCHMEe-mELykhIdj6Q",
+  "contextList" : [ {
+    "contextName" : "DEVELOPMENT",
+    "repoId" : "_qW31MCHOEe-mELykhIdj6Q",
+    "parameterList" : [ {
+      "id" : "_qXEpgSHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_Login"
+    }, {
+      "id" : "_qXEpgiHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_AdditionalParams"
+    }, {
+      "id" : "_qXEpgyHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_Server"
+    }, {
+      "id" : "_qXEphCHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_Database"
+    }, {
+      "id" : "_qXEphSHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_Password"
+    }, {
+      "id" : "_qXEphiHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_Port"
+    }, {
+      "id" : "_qXEphyHOEe-mELykhIdj6Q",
+      "name" : "DB_SQLServer_PLEX_Schema"
+    } ]
+  } ]
+}
