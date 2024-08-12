@@ -98,6 +98,7 @@
     <Build Include="dbo\Tables\ODS_MATERIAL_MANUFACTURER_PART_NO.sql" />
     <Build Include="dbo\Tables\ODS_MATERIAL_SUPPLIER_BOND_PIPELINE.sql" />
     <Build Include="dbo\Tables\ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_DELIVERY.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />
