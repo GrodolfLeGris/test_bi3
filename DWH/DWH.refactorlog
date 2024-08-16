@@ -539,4 +539,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="29b55c6b-7446-462f-9623-d3c68aea4f8b" ChangeDateTime="08/13/2024 18:42:55">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_MRP].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_MRP]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5f12540c-1c83-4b20-8f3f-dc865eca7479" ChangeDateTime="08/13/2024 18:43:04">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_MRP].[MATERIAL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_MRP]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MATERIAL_ID" />
+  </Operation>
 </Operations>
