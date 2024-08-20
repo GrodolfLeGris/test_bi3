@@ -10,5 +10,6 @@
     [RELEASE_ID] INT NULL, 
     [Initial_Quantity] DECIMAL(18, 6) NULL, 
     [Ending_Quantity] DECIMAL(18, 6) NULL, 
+    [TYPE] VARCHAR(50) NULL, 
     PRIMARY KEY ([ORGANIZATIONLVL3ID], [MRP_KEY], [ADD_DATE])
 )
