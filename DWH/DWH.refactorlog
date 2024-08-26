@@ -553,4 +553,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MATERIAL_ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="255a652a-fb4d-4317-8a7d-2fb249816693" ChangeDateTime="08/26/2024 15:38:35">
+    <Property Name="ElementName" Value="[dbo].[ODS_PRODUCTION_RATES].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PRODUCTION_RATES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
 </Operations>
