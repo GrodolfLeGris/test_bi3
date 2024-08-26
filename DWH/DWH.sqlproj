@@ -103,6 +103,7 @@
     <Build Include="Logins\REPORT_USER.sql" />
     <Build Include="Security\REPORT_USER.sql" />
     <Build Include="dbo\Tables\ODS_PRODUCTION_RATES.sql" />
+    <Build Include="dbo\Tables\ODS_PURCHASE_APPROVED_SUPPLIER_PRICE.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />

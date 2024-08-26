@@ -560,4 +560,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a8495bc7-79ac-4a61-a21b-9f9a133b0b18" ChangeDateTime="08/26/2024 16:59:46">
+    <Property Name="ElementName" Value="[dbo].[ODS_PURCHASE_APPROVED_SUPPLIER_PRICE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PURCHASE_APPROVED_SUPPLIER_PRICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
 </Operations>
