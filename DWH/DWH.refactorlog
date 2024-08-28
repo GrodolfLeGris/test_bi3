@@ -567,4 +567,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="966c2a6e-b76f-44e4-a286-667f18b870a8" ChangeDateTime="08/26/2024 19:38:14">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION].[LAST_OPERATION]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_PRODUCTION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IS_LAST_OPERATION" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f0f901ee-822d-43bb-badf-1f73a7923178" ChangeDateTime="08/27/2024 16:15:57">
+    <Property Name="ElementName" Value="[dbo].[DIM_CALENDAR].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_CALENDAR]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CALENDAR_DATE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="26ead81d-b647-4307-8d0d-6039159eacfa" ChangeDateTime="08/27/2024 16:22:04">
+    <Property Name="ElementName" Value="[dbo].[DIM_CALENDAR].[WEEK_OF_WEEK]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_CALENDAR]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WEEK_OF_YEAR" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="33a6e71e-aeb9-442f-b328-9c532a32e67d" ChangeDateTime="08/28/2024 17:34:44">
+    <Property Name="ElementName" Value="[dbo].[ODS_PRODUCTION_OEE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PRODUCTION_OEE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
+  </Operation>
 </Operations>
