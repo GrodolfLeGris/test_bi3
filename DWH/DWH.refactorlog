@@ -602,4 +602,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ORGANIZATIONLVL3ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="af8d470e-e568-40da-8417-37a6f7578ad9" ChangeDateTime="09/02/2024 18:53:11">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_COST_PRICE].[PO_PRICE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_COST_PRICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SALES_PO_PRICE" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="11c82ed7-1817-4642-8fe1-fa88fd7d7ad2" ChangeDateTime="09/02/2024 18:53:18">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_COST_PRICE].[PO_NO_PRICE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_COST_PRICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SALES_PO_NO" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="33cc95cc-e8c1-4553-8890-6750efb88835" ChangeDateTime="09/02/2024 18:53:26">
+    <Property Name="ElementName" Value="[dbo].[ODS_MATERIAL_COST_PRICE].[MASTER_PRICE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_MATERIAL_COST_PRICE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="COST_MASTER_PRICE" />
+  </Operation>
 </Operations>
