@@ -106,6 +106,7 @@
     <Build Include="dbo\Tables\ODS_PURCHASE_APPROVED_SUPPLIER_PRICE.sql" />
     <Build Include="dbo\Tables\DIM_CALENDAR.sql" />
     <Build Include="dbo\Tables\ODS_PRODUCTION_OEE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_COST_PRICE.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />
