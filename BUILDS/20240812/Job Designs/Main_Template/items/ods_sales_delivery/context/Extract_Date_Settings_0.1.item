@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_8hZuwKk1EeyaadfRxAJ8Ow" confirmationNeeded="false" name="DEPLOYMENT">
-  <contextParameter xmi:id="_8hZuwak1EeyaadfRxAJ8Ow" comment="" name="StartDate" prompt="StartDate?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_8hZuwqk1EeyaadfRxAJ8Ow" comment="" name="EndDate" prompt="EndDate?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_8hZuw6k1EeyaadfRxAJ8Ow" comment="" name="CurrentDate" prompt="CurrentDate?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_8hZuxKk1EeyaadfRxAJ8Ow" comment="" name="NbDayExtract" prompt="NbDayExtract?" promptNeeded="false" type="id_String" value="7"/>
-  <contextParameter xmi:id="_8hZuxak1EeyaadfRxAJ8Ow" comment="" name="ErrorDate" prompt="ErrorDate?" promptNeeded="false" type="id_String" value=""/>
-</talendfile:ContextType>
