@@ -283,3 +283,9 @@ FodyWeavers.xsd
 /MES/.vs/MES/FileContentIndex/0f026cae-e46b-47a5-85fb-0215f23572a7.vsidx
 /MES/.vs/MES/FileContentIndex/1d7d90f0-7af4-4bd9-a55b-3f10abe48589.vsidx
 *.vsidx
+/DWH/bin/Debug/DWH.dacpac
+/DWH/bin/Debug/DWH.pdb
+/DWH/dbo/Tables/ODS_SALES_RELEASE_PROJECTION.sql
+/DWH/obj/Debug/DWH.dll
+/DWH/obj/Debug/DWH.pdb
+/DWH/bin/Debug/DWH.dll
