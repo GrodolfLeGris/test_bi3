@@ -672,4 +672,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="COST_PO" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="c9bdce70-ab54-42d2-a187-94702528620b" ChangeDateTime="09/20/2024 14:51:22">
+    <Property Name="ElementName" Value="[dbo].[ODS_SALES_RELEASE_PROJECTION].[QUANTITY_ALLOWED]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_SALES_RELEASE_PROJECTION]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QUANTITY_ALLOCATED" />
+  </Operation>
 </Operations>
