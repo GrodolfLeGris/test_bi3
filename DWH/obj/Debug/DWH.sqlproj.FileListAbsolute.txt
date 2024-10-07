@@ -10,7 +10,3 @@ D:\DataBases\DWH\DWH\bin\Debug\DWH.pdb
 D:\DataBases\DWH\DWH\obj\Debug\DWH.sqlproj.AssemblyReference.cache
 D:\DataBases\DWH\DWH\obj\Debug\DWH.dll
 D:\DataBases\DWH\DWH\obj\Debug\DWH.pdb
-D:\0 - Apps\Databases\DWH\DWH\obj\Debug\Model.xml
-D:\0 - Apps\Databases\DWH\DWH\obj\Debug\refactor.xml
-D:\0 - Apps\Databases\DWH\DWH\obj\Debug\postdeploy.sql
-D:\0 - Apps\Databases\DWH\DWH\obj\Debug\predeploy.sql
