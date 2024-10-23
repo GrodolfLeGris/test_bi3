@@ -679,4 +679,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="QUANTITY_ALLOCATED" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="63219288-aab5-4583-a259-b2a13ba5bb5d" ChangeDateTime="10/23/2024 17:06:53">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES].[PAYMENT_TERM]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PAYMENT_TERMS" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4b8371e5-b8ed-4427-b7fc-6867f0439e25" ChangeDateTime="10/23/2024 17:07:17">
+    <Property Name="ElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES].[INCOTERM]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DIM_MATERIAL_MATERIAL_ATTRIBUTES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INCO_TERMS" />
+  </Operation>
 </Operations>
