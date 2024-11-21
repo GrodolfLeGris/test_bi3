@@ -24,3 +24,68 @@
     [APPROVED_REASON] VARCHAR(50) NOT NULL,
     PRIMARY KEY ([ORGANIZATIONLVL3ID], [MATERIAL_ID], [OPERATION_ID], [LOCATION_ID])
 )
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+GO
+CREATE TRIGGER DEL_HISTORY 
+   ON  ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES
+   AFTER DELETE
+AS 
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for trigger here
+	
+	INSERT INTO [dbo].[ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES]
+			   ([ORGANIZATIONLVL3ID]
+			   ,[MATERIAL_ID]
+			   ,[SORT_ORDER]
+			   ,[OPERATION_ID]
+			   ,[LOCATION_ID]
+			   ,[BUILDING_ID]
+			   ,[CREW_SIZE]
+			   ,[SETUP_CREW_SIZE]
+			   ,[INSPECTION_CREW_SIZE]
+			   ,[STANDAR_PRODUCTION_RATE]
+			   ,[SETUP_TIME]
+			   ,[STANDART_PRODUCTION_TIME]
+			   ,[LEAD_TIME]
+			   ,[IDEAL_RATE]
+			   ,[TARGET_RATE]
+			   ,[CYCLE_TIME]
+			   ,[BATCH_CYCLE_TIME]
+			   ,[BATCH_SIZE]
+			   ,[SCHEDULE]
+			   ,[OUTPUT_YIELD_PERCENTAGE]
+			   ,[SNAPSHOT_DATE]
+			   ,[APPROVED_REASON],[DELETED_DATE])
+	SELECT [ORGANIZATIONLVL3ID]
+			   ,[MATERIAL_ID]
+			   ,[SORT_ORDER]
+			   ,[OPERATION_ID]
+			   ,[LOCATION_ID]
+			   ,[BUILDING_ID]
+			   ,[CREW_SIZE]
+			   ,[SETUP_CREW_SIZE]
+			   ,[INSPECTION_CREW_SIZE]
+			   ,[STANDAR_PRODUCTION_RATE]
+			   ,[SETUP_TIME]
+			   ,[STANDART_PRODUCTION_TIME]
+			   ,[LEAD_TIME]
+			   ,[IDEAL_RATE]
+			   ,[TARGET_RATE]
+			   ,[CYCLE_TIME]
+			   ,[BATCH_CYCLE_TIME]
+			   ,[BATCH_SIZE]
+			   ,[SCHEDULE]
+			   ,[OUTPUT_YIELD_PERCENTAGE]
+			   ,[SNAPSHOT_DATE]
+			   ,[APPROVED_REASON],GETDATE() AS DEETED_DATE FROM DELETED
+
+END
