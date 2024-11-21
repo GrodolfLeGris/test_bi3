@@ -693,4 +693,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="INCO_TERMS" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="7e6f6722-f8fa-4373-a242-117efac64a17" ChangeDateTime="11/21/2024 17:58:53">
+    <Property Name="ElementName" Value="[dbo].[ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES_LOG].[DELETE_DATE]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES_LOG]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DELETED_DATE" />
+  </Operation>
 </Operations>

@@ -111,6 +111,7 @@
     <Build Include="dbo\Tables\ODS_SALES_RELEASE_PROJECTION.sql" />
     <Build Include="StoreProcedures\spSALES_RELEASES_MATERIAL_ALLOCATION.sql" />
     <Build Include="dbo\Tables\ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES.sql" />
+    <Build Include="dbo\Tables\ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES_LOG.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />
