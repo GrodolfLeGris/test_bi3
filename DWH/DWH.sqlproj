@@ -113,6 +113,7 @@
     <Build Include="dbo\Tables\ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES.sql" />
     <Build Include="dbo\Tables\ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES_LOG.sql" />
     <Build Include="dbo\Tables\ODS_ACCOUNTING_BALANCE.sql" />
+    <Build Include="dbo\Tables\DIM_ACCOUNTING_ACCOUNT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />
