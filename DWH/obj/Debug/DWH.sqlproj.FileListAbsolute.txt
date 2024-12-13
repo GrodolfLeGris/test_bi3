@@ -18,9 +18,5 @@ D:\0 - Apps\dwh-database\DWH\bin\Debug\DWH.dacpac
 D:\0 - Apps\dwh-database\DWH\bin\Debug\DWH.dll
 D:\0 - Apps\dwh-database\DWH\bin\Debug\DWH.pdb
 D:\0 - Apps\dwh-database\DWH\obj\Debug\DWH.sqlproj.AssemblyReference.cache
-D:\0 - Apps\dwh-database\DWH\obj\Debug\Model.xml
-D:\0 - Apps\dwh-database\DWH\obj\Debug\refactor.xml
-D:\0 - Apps\dwh-database\DWH\obj\Debug\postdeploy.sql
-D:\0 - Apps\dwh-database\DWH\obj\Debug\predeploy.sql
 D:\0 - Apps\dwh-database\DWH\obj\Debug\DWH.dll
 D:\0 - Apps\dwh-database\DWH\obj\Debug\DWH.pdb
