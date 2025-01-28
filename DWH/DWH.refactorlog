@@ -700,4 +700,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DELETED_DATE" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5bed0cfb-c71c-4fe1-84e6-fc055331310f" ChangeDateTime="01/28/2025 18:54:34">
+    <Property Name="ElementName" Value="[dbo].[ODS_HUMAN_RESOURCES_PAID_HOURS].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_HUMAN_RESOURCES_PAID_HOURS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmployeeID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6721529f-d6a4-4ab9-a0b6-7a9f95a67c95" ChangeDateTime="01/28/2025 18:54:43">
+    <Property Name="ElementName" Value="[dbo].[ODS_HUMAN_RESOURCES_PAID_HOURS].[EmployeeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ODS_HUMAN_RESOURCES_PAID_HOURS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EMPLOYEEID" />
+  </Operation>
 </Operations>
