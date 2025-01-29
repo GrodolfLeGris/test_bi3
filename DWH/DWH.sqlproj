@@ -121,7 +121,6 @@
     <RefactorLog Include="DWH.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AZURE-PROD_DWH.publish.xml" />
     <None Include="JUA2_PROD_DWH.publish.xml" />
   </ItemGroup>
 </Project>
