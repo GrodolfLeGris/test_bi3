@@ -115,12 +115,12 @@
     <Build Include="dbo\Tables\ODS_ACCOUNTING_BALANCE.sql" />
     <Build Include="dbo\Tables\DIM_ACCOUNTING_ACCOUNT.sql" />
     <Build Include="dbo\Tables\ODS_HUMAN_RESOURCES_PAID_HOURS.sql" />
+    <Build Include="dbo\Tables\ODS_ACCOUNTING_BUDGET.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWH.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AZURE-PROD_DWH.publish.xml" />
     <None Include="JUA2_PROD_DWH.publish.xml" />
   </ItemGroup>
 </Project>
