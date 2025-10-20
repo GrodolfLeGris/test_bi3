@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DWH</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{5ee82eca-52cf-4d5d-8a72-9780f3a407bc}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DWH</RootNamespace>
+    <AssemblyName>DWH</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="Logins" />
+    <Folder Include="StoreProcedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\DIM_COMMON_ORGANIZATION_LEVEL1_ACTIVITY.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_BUILDING.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_ORGANIZATION_LEVEL2_BUSINESS_UNIT.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_CUSTOMER.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_ORGANIZATION_LEVEL3_SITE.sql" />
+    <Build Include="Security\PROD_DWH_USER.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="Logins\PROD_DWH_USER.sql" />
+    <Build Include="dbo\Tables\DIM_MATERIAL_MATERIAL.sql" />
+    <Build Include="dbo\Tables\DIM_MATERIAL_MATERIAL_TYPE.sql" />
+    <Build Include="dbo\Tables\DIM_MATERIAL_MATERIAL_FAMILY.sql" />
+    <Build Include="dbo\Tables\DIM_MATERIAL_MATERIAL_ATTRIBUTES.sql" />
+    <Build Include="dbo\Tables\ODS_HUMAN_RESOURCES_SECURITY_ACCIDENTS.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_SCRAP.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_COUNTRY.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_CURRENCY.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_COUNTRY_STATE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_INVENTORY.sql" />
+    <Build Include="dbo\Tables\DIM_MATERIAL_OPERATION.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_RELEASE.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_FORECAST.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_LOCATION.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_PRODUCTION.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_RETURN.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_SUPPLIER.sql" />
+    <Build Include="dbo\Tables\ODS_ACCOUNTING_AR_INVOICE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_ADJUSMENT.sql" />
+    <Build Include="dbo\Tables\ODS_PURCHASE_RELEASE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_BOM.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_INVENTORY_CURRENT.sql" />
+    <Build Include="dbo\Tables\DIM_COMMON_MANUFACTURER.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_MANUFACTURER_PART_NO.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_SUPPLIER_BOND_PIPELINE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_SUPPLIER_BOND_PROXIMITY.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_DELIVERY.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_MRP.sql" />
+    <Build Include="Logins\REPORT_USER.sql" />
+    <Build Include="Security\REPORT_USER.sql" />
+    <Build Include="dbo\Tables\ODS_PRODUCTION_RATES.sql" />
+    <Build Include="dbo\Tables\ODS_PURCHASE_APPROVED_SUPPLIER_PRICE.sql" />
+    <Build Include="dbo\Tables\DIM_CALENDAR.sql" />
+    <Build Include="dbo\Tables\ODS_PRODUCTION_OEE.sql" />
+    <Build Include="dbo\Tables\ODS_MATERIAL_COST_PRICE.sql" />
+    <Build Include="dbo\Tables\ODS_SALES_RELEASE_PROJECTION.sql" />
+    <Build Include="StoreProcedures\spSALES_RELEASES_MATERIAL_ALLOCATION.sql" />
+    <Build Include="dbo\Tables\ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES.sql" />
+    <Build Include="dbo\Tables\ODS_PRODUCTION_RATES_APPROVED_BY_FINANCES_LOG.sql" />
+    <Build Include="dbo\Tables\ODS_ACCOUNTING_BALANCE.sql" />
+    <Build Include="dbo\Tables\DIM_ACCOUNTING_ACCOUNT.sql" />
+    <Build Include="dbo\Tables\ODS_HUMAN_RESOURCES_PAID_HOURS.sql" />
+    <Build Include="dbo\Tables\ODS_ACCOUNTING_BUDGET.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DWH.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JUA2_PROD_DWH.publish.xml" />
+  </ItemGroup>
+</Project>

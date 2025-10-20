@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[DIM_COMMON_SITE]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[DIM_COMMON_SITE].[BUSINESS_UNIT] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[DIM_COMMON_BUILDING].[ORGANIZATIONLVL1ID] (Column)
+       [dbo].[DIM_COMMON_ACTIVITY].[ORGANIZATIONLVL1ID] (Column)
+     Alter
+       [dbo].[DIM_COMMON_BUSINESS_UNIT] (Table)
+     Recreate table
+       [dbo].[DIM_COMMON_SITE] (Table)
+
+** Supporting actions
+
+The object [PROD_DWH_USER] already exists in database with a different definition and will not be altered.
+The column [dbo].[DIM_COMMON_SITE].[BUSINESS_UNIT] is being dropped, data loss could occur.
+

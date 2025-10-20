@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [PROD_DWH_USER] (Login)
+       [PROD_DWH_User] (User)
+       [db_datareader] for [PROD_DWH_User] (Role Membership)
+       [db_datawriter] for [PROD_DWH_User] (Role Membership)
+       [dbo].[DIM_ACCOUNTING_ACCOUNT] (Table)
+       [dbo].[DIM_ACCOUNTING_CLASSIFICATION] (Table)
+       [dbo].[DIM_COMMON_ACTIVITY] (Table)
+       [dbo].[DIM_COMMON_BUILDING] (Table)
+       [dbo].[DIM_COMMON_BUSINESS_UNIT] (Table)
+       [dbo].[DIM_COMMON_CUSTOMER] (Table)
+       [dbo].[DIM_COMMON_SITE] (Table)
+
+** Supporting actions
