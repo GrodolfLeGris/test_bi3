@@ -1,0 +1,16 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+
+** Supporting actions
+
+The object [PROD_DWH_USER] already exists in database with a different definition and will not be altered.
+
