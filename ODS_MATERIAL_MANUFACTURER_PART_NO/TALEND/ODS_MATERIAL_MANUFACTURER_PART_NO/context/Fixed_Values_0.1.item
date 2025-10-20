@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_8hhqkKk1EeyaadfRxAJ8Ow" confirmationNeeded="false" name="DEPLOYMENT">
+  <contextParameter xmi:id="_8hhqkak1EeyaadfRxAJ8Ow" comment="" name="OrganizationLvl3" prompt="OrganizationLvl3?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ELEC_NAM_JUA"/>
+  <contextParameter xmi:id="_8hhqk6k1EeyaadfRxAJ8Ow" comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PLEX"/>
+  <contextParameter xmi:id="_8hhqlKk1EeyaadfRxAJ8Ow" comment="" name="NotApplicableCode" prompt="NotApplicableCode?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="N/A"/>
+</talendfile:ContextType>
